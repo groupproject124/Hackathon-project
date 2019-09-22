@@ -4,45 +4,73 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
 
     <ImageView
         android:id="@+id/bu4"
-        android:layout_width="200dp"
-        android:layout_height="298dp"
+        android:layout_width="163dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="100dp"
         android:onClick="cal"
+        android:outlineProvider="paddedBounds"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bu3"
         app:srcCompat="@drawable/accenture"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="207dp"
-        tools:layout_editor_absoluteY="355dp" />
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/bu2"
-        android:layout_width="200dp"
-        android:layout_height="298dp"
+        android:layout_width="158dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="80dp"
         android:onClick="cal"
+        android:outlineProvider="paddedBounds"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/bu4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/bu1"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/google"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="197dp"
-        tools:layout_editor_absoluteY="57dp" />
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/bu3"
-        android:layout_width="200dp"
-        android:layout_height="298dp"
+        android:layout_width="160dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="100dp"
         android:onClick="cal"
+        android:outlineProvider="paddedBounds"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.004"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/amazon"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="362dp" />
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/bu1"
-        android:layout_width="200dp"
-        android:layout_height="298dp"
+        android:layout_width="177dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="80dp"
         android:onClick="cal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/bu3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/tcs"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-4dp"
-        tools:layout_editor_absoluteY="57dp" />
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

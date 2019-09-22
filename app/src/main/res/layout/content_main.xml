@@ -12,6 +12,9 @@
         android:id="@+id/imageView9"
         android:layout_width="202dp"
         android:layout_height="270dp"
+        android:onClick="cal"
+        android:outlineProvider="paddedBounds"
+        android:visibility="visible"
         app:srcCompat="@drawable/tcs"
         tools:layout_editor_absoluteX="-11dp"
         tools:layout_editor_absoluteY="38dp" />
@@ -20,6 +23,9 @@
         android:id="@+id/imageView7"
         android:layout_width="217dp"
         android:layout_height="273dp"
+        android:onClick="cal"
+        android:outlineProvider="paddedBounds"
+        android:visibility="visible"
         app:srcCompat="@drawable/amazon"
         tools:layout_editor_absoluteX="198dp"
         tools:layout_editor_absoluteY="33dp" />
@@ -28,6 +34,9 @@
         android:id="@+id/imageView8"
         android:layout_width="173dp"
         android:layout_height="250dp"
+        android:onClick="cal"
+        android:outlineProvider="paddedBounds"
+        android:visibility="visible"
         app:srcCompat="@drawable/google"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="331dp" />
@@ -36,6 +45,9 @@
         android:id="@+id/imageView6"
         android:layout_width="207dp"
         android:layout_height="261dp"
+        android:onClick="cal"
+        android:outlineProvider="paddedBounds"
+        android:visibility="visible"
         app:srcCompat="@drawable/accenture"
         tools:layout_editor_absoluteX="192dp"
         tools:layout_editor_absoluteY="320dp" />

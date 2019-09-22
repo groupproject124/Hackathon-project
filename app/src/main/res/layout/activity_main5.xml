@@ -6,4 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".Main5Activity">
 
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="393dp"
+        android:layout_height="571dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="17dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
