@@ -6,4 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".Main3Activity">
 
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Avg Package-8 to 10 lakhs per annum"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="58dp"
+        tools:targetApi="o"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="cgpa required-8.0"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="132dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="Branch -CS\IT\ECE"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="226dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="477dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
