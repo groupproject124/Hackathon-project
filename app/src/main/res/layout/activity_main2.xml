@@ -7,34 +7,43 @@
     tools:context=".Main2Activity">
 
     <EditText
-        android:layout_width="80dp"
-        android:layout_height="50dp"
+        android:layout_width="291dp"
+        android:layout_height="57dp"
         android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/avg_package_8_5_15_lakhs"
+        android:textAllCaps="true"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
+        android:textStyle="bold"
         android:visibility="visible"
         tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="58dp"
+        tools:layout_editor_absoluteY="51dp"
         tools:targetApi="o"
         tools:visibility="visible" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="80dp"
-        android:layout_height="50dp"
-        android:text="Cgpa required-8.0"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="143dp" />
+        android:layout_width="301dp"
+        android:layout_height="68dp"
+        android:text="Cgpa required     -  8.0"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="174dp" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="80dp"
-        android:layout_height="50dp"
-        android:text="Branch -CS\IT\ECE"
+        android:layout_width="300dp"
+        android:layout_height="59dp"
+        android:text="Branch            -CS\IT\ECE"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textStyle="bold"
         tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="226dp" />
+        tools:layout_editor_absoluteY="297dp" />
 
     <Button
         android:id="@+id/button"

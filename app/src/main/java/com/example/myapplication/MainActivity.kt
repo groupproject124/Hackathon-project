@@ -2,20 +2,51 @@ package com.example.myapplication
 
 import android.content.Intent
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.ImageButton
+import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
 
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_main.bu1
 
 class MainActivity : AppCompatActivity() {
+    //var dataadd = ArrayList<data>()
+    var name=""
+    var cgpa=0.0
+    var rollno=0
+
+
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        var context= this
+        bu1.setOnClickListener({
+            if(tt1.text.toString().length>0&&tt2.text.toString().length>0)
+            {var user=DataB(tt2.text.toString().toInt(),tt1.text.toString(),tt3.text.toString().toDouble(),false,false,false,false)
+            var db=Datas(context)
+                var intent= Intent(applicationContext,Main6Activity::class.java)
+                startActivity(intent)
+
+
+            }
+            else{
+                Toast.makeText(context,"Please Fill The data",Toast.LENGTH_SHORT)
+            }
+
+            tt1.setText("")
+            tt2.setText("")
+            tt3.setText("")
+
+        })
+
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -33,17 +64,15 @@ class MainActivity : AppCompatActivity() {
             else -> super.onOptionsItemSelected(item)
         }
     }
-    fun cal(view: View){
-        val cd= view as ImageButton
+                //tt4.visibility=View.VISIBLE
+
+
+    fun edit(view:View){
+        var cd= view as EditText
         when(cd.id){
-            bu1.id->{ var intent= Intent(applicationContext,Main2Activity::class.java)
-                startActivity(intent)}
-            bu2.id->{ var intent=Intent(applicationContext,Main3Activity::class.java)
-                startActivity(intent)}
-            bu3.id->{ var intent=Intent(applicationContext,Main4Activity::class.java)
-                startActivity(intent)}
-            bu4.id->{ var intent=Intent(applicationContext,Main5Activity::class.java)
-                startActivity(intent)}
+            tt1.id ->{tt1.setText("")}
+            tt2.id ->{tt2.setText("")}
+            tt3.id ->{tt3.setText("")}
 
         }
     }

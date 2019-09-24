@@ -8,69 +8,76 @@
     tools:context=".MainActivity"
     tools:visibility="visible">
 
-    <ImageView
-        android:id="@+id/bu4"
-        android:layout_width="163dp"
-        android:layout_height="146dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="100dp"
-        android:onClick="cal"
-        android:outlineProvider="paddedBounds"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/bu3"
-        app:srcCompat="@drawable/accenture"
-        tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/bu2"
-        android:layout_width="158dp"
-        android:layout_height="127dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="80dp"
-        android:onClick="cal"
-        android:outlineProvider="paddedBounds"
+    <EditText
+        android:id="@+id/tt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:onClick="edit"
+        android:text="Enter your Cgpa"
+        android:textStyle="bold"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/bu4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/bu1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/google"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/bu3"
-        android:layout_width="160dp"
-        android:layout_height="137dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginBottom="100dp"
-        android:onClick="cal"
-        android:outlineProvider="paddedBounds"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.004"
+        app:layout_constraintBottom_toTopOf="@+id/bu1"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/amazon"
         tools:ignore="MissingConstraints" />
 
-    <ImageView
+    <EditText
+        android:id="@+id/tt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:onClick="edit"
+        android:text="Enter your Name"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/tt2"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/tt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:onClick="edit"
+        android:text="Enter Your Roll No"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/tt3"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
         android:id="@+id/bu1"
-        android:layout_width="177dp"
-        android:layout_height="130dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="80dp"
-        android:onClick="cal"
+        android:layout_width="233dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="20dp"
+        android:text="SUMIT"
+        android:textStyle="bold"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/bu3"
+        app:layout_constraintBottom_toTopOf="@+id/tt4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/tcs"
         tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text="Your Data Doenot match Please enter correct Information"
+        android:textColor="#640000"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,34 +7,40 @@
     tools:context=".Main5Activity">
 
     <EditText
-        android:layout_width="80dp"
-        android:layout_height="50dp"
+        android:layout_width="330dp"
+        android:layout_height="56dp"
         android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Avg Package-6 TO 7 lakhs"
         android:textAppearance="@android:style/TextAppearance"
+        android:textColor="#000000"
+        android:textStyle="bold"
         android:visibility="visible"
         tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="58dp"
+        tools:layout_editor_absoluteY="52dp"
         tools:targetApi="o"
         tools:visibility="visible" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="80dp"
-        android:layout_height="50dp"
+        android:layout_width="323dp"
+        android:layout_height="45dp"
         android:text="Cgpa required-7.0 to 7.5"
+        android:textColor="#000000"
+        android:textStyle="bold"
         tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="132dp" />
+        tools:layout_editor_absoluteY="178dp" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="80dp"
-        android:layout_height="50dp"
+        android:layout_width="309dp"
+        android:layout_height="59dp"
         android:text="Branch -CS\IT\ECE"
+        android:textColor="#000000"
+        android:textStyle="bold"
         tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="226dp" />
+        tools:layout_editor_absoluteY="291dp" />
 
     <Button
         android:id="@+id/button"
