@@ -26,6 +26,13 @@ class Datas(var context: Context) : SQLiteOpenHelper(context, DATABASE_NAME,null
     override fun onUpgrade(db: SQLiteDatabase?, p1: Int, p2: Int) {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
+    fun findCgpa(user: DataB): Unit? {
+        var sql="SELECT cgpa From"+ TABLE_NAME+"where rollno="+M_id+";"
+        val  db=this.readableDatabase
+        var ct=db?.execSQL(sql)
+        return ct
+
+    }
     fun inserData(user : DataB){
         val db = this.writableDatabase
         val cv = ContentValues()

@@ -37,7 +37,7 @@
         app:layout_constraintBottom_toTopOf="@+id/bu4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/bu1"
+        app:layout_constraintStart_toEndOf="@+id/hh2"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/google"
         tools:ignore="MissingConstraints" />
@@ -59,7 +59,7 @@
         tools:ignore="MissingConstraints" />
 
     <ImageView
-        android:id="@+id/bu1"
+        android:id="@+id/hh2"
         android:layout_width="177dp"
         android:layout_height="130dp"
         android:layout_marginStart="10dp"

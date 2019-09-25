@@ -43,11 +43,20 @@
         tools:layout_editor_absoluteY="291dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/hh3"
+        android:layout_width="79dp"
+        android:layout_height="56dp"
+        android:text="Submit"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="469dp" />
+
+    <Button
+        android:id="@+id/bu2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="477dp" />
+        android:onClick="see"
+        android:text="back"
+        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteY="485dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

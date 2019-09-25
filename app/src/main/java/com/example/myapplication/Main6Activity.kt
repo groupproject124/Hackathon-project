@@ -7,9 +7,8 @@ import android.view.View
 import android.widget.ImageButton
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main6.*
-import kotlinx.android.synthetic.main.activity_main6.bu1 as bu11
 
-class Main6Activity : AppCompatActivity() {
+class Main6Activity : AppCompatActivity()  {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,8 +16,11 @@ class Main6Activity : AppCompatActivity() {
     }
     fun cal(view: View){
         var cd= view as ImageButton
+        var cgpa=0.0
+
         when(cd.id){
-            bu1.id->{ var intent= Intent(applicationContext,Main2Activity::class.java)
+
+            hh2.id->{ var intent= Intent(applicationContext,Main2Activity::class.java)
                 startActivity(intent)}
             bu2.id->{ var intent= Intent(applicationContext,Main3Activity::class.java)
                 startActivity(intent)}

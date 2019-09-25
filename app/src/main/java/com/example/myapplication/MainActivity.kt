@@ -6,13 +6,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_main.bu1
-
+import kotlinx.android.synthetic.main.activity_main.hh2
+var M_id=0
+var cgpa_new=0.0
 class MainActivity : AppCompatActivity() {
     //var dataadd = ArrayList<data>()
     var name=""
@@ -28,18 +28,20 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         var context= this
         var db=Datas(context)
-        bu1.setOnClickListener({
+        hh2.setOnClickListener({
             if(tt1.text.toString().length>0&&tt2.text.toString().length>0)
             {var user=DataB(tt2.text.toString().toInt(),tt1.text.toString(),tt3.text.toString().toDouble(),false,false,false,false)
 
                 var intent= Intent(applicationContext,Main6Activity::class.java)
                 startActivity(intent)
+                M_id=tt2.text.toString().toInt()
 
 
             }
             else{
                 Toast.makeText(context,"Please Fill The data",Toast.LENGTH_SHORT)
             }
+
 
 
 
