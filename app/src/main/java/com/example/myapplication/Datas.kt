@@ -31,6 +31,7 @@ class Datas(var context: Context) : SQLiteOpenHelper(context, DATABASE_NAME,null
         val cv = ContentValues()
         cv.put(C_NAME,user.name)
         cv.put(C_cgpa,user.cgpa)
+        cv.put(c_Id,user.rollno)
         cv.put(accenture,user.accenture)
         cv.put(google,user.google)
         cv.put(amazon,user.amazon)
@@ -45,6 +46,22 @@ class Datas(var context: Context) : SQLiteOpenHelper(context, DATABASE_NAME,null
             Toast.makeText(context,"Sucess",Toast.LENGTH_SHORT).show()
 
 
+
+    }
+    fun updateData(){
+        val db=this.writableDatabase
+        val query="Select * from "+ TABLE_NAME
+        val result = db.rawQuery(query,null)
+        if(result.moveToFirst()){
+            do {
+                var cv = ContentValues()
+                cv.put(c_Id,result.getDouble(result.getColumnIndex(c_Id)+1))
+                db.update(TABLE_NAME,cv, c_Id+"=? AND" + C_NAME+"+?", arrayOf(result.getString(result.getColumnIndex(
+                    c_Id))))
+            }while(result.moveToNext())
+        }
+        result.close()
+        db.close()
 
     }
 }

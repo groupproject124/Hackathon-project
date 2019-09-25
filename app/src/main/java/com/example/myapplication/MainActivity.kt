@@ -27,10 +27,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         var context= this
+        var db=Datas(context)
         bu1.setOnClickListener({
             if(tt1.text.toString().length>0&&tt2.text.toString().length>0)
             {var user=DataB(tt2.text.toString().toInt(),tt1.text.toString(),tt3.text.toString().toDouble(),false,false,false,false)
-            var db=Datas(context)
+
                 var intent= Intent(applicationContext,Main6Activity::class.java)
                 startActivity(intent)
 
@@ -39,6 +40,9 @@ class MainActivity : AppCompatActivity() {
             else{
                 Toast.makeText(context,"Please Fill The data",Toast.LENGTH_SHORT)
             }
+
+
+
 
             tt1.setText("")
             tt2.setText("")

@@ -27,4 +27,5 @@ class DataB {
             this.tcs=tcs
 
         }
+    constructor(){}
     }
