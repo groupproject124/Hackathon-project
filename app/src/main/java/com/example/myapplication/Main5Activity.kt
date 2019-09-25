@@ -39,7 +39,7 @@ class Main5Activity : AppCompatActivity() {
     fun see(view: View){
         var cd= view as Button
         when(cd.id){
-            hh3.id->{
+            hh2.id->{
                 var recipt="naman.nishi@gmail.com"
                 var subject="placement request"
                 var body="roll no"+ M_id+"has applied for Tcs Please see his details with college"

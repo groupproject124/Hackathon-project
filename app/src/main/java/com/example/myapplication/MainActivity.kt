@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -32,7 +33,7 @@ class MainActivity : AppCompatActivity() {
             if(tt1.text.toString().length>0&&tt2.text.toString().length>0)
             {var user=DataB(tt2.text.toString().toInt(),tt1.text.toString(),tt3.text.toString().toDouble(),false,false,false,false)
 
-                var intent= Intent(applicationContext,Main6Activity::class.java)
+                var intent= Intent(this,Main6Activity::class.java)
                 startActivity(intent)
                 M_id=tt2.text.toString().toInt()
 

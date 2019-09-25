@@ -8,38 +8,62 @@
 
 
     <EditText
-        android:id="@+id/editText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="330dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="50dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Amazon" />
+        android:text="Avg Package-12 TO 15 lakhs"
+        android:textAppearance="@android:style/TextAppearance"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        tools:layout_editor_absoluteX="33dp"
+        tools:targetApi="o"
+        tools:visibility="visible" />
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Average Package    12-28lack"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="116dp" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="323dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="50dp"
+        android:text="Cgpa required-7.0 to 7.5"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        tools:layout_editor_absoluteX="33dp" />
 
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Branch        CS/IT/ECE"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="219dp" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="309dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="300dp"
+        android:text="Branch -CS\IT\ECE"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="33dp" />
 
     <Button
         android:id="@+id/hh2"
-        android:layout_width="match_parent"
+        android:layout_width="79dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="100dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bu2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="364dp" />
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="100dp"
+        android:onClick="see"
+        android:text="back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

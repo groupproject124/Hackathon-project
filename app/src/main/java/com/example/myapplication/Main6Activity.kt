@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.ImageButton
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main6.*
@@ -14,19 +15,20 @@ class Main6Activity : AppCompatActivity()  {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main6)
     }
+
     fun cal(view: View){
-        var cd= view as ImageButton
+        var cd= view as Button
         var cgpa=0.0
 
         when(cd.id){
 
-            bu1.id->{ var intent= Intent(applicationContext,Main2Activity::class.java)
+            bu1.id->{ var intent=Intent(this@Main6Activity,Main2Activity::class.java)
                 startActivity(intent)}
-            bu2.id->{ var intent= Intent(applicationContext,Main3Activity::class.java)
+            bu2.id->{ var intent= Intent(this@Main6Activity,Main3Activity::class.java)
                 startActivity(intent)}
-            bu3.id->{ var intent= Intent(applicationContext,Main4Activity::class.java)
+            bu3.id->{ var intent= Intent(this@Main6Activity,Main4Activity::class.java)
                 startActivity(intent)}
-            bu4.id->{ var intent= Intent(applicationContext,Main5Activity::class.java)
+            bu4.id->{ var intent= Intent(this@Main6Activity,Main5Activity::class.java)
                 startActivity(intent)}
 
         }
