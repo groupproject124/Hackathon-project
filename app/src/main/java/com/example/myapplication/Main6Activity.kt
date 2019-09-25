@@ -20,7 +20,7 @@ class Main6Activity : AppCompatActivity()  {
 
         when(cd.id){
 
-            hh2.id->{ var intent= Intent(applicationContext,Main2Activity::class.java)
+            bu1.id->{ var intent= Intent(applicationContext,Main2Activity::class.java)
                 startActivity(intent)}
             bu2.id->{ var intent= Intent(applicationContext,Main3Activity::class.java)
                 startActivity(intent)}
