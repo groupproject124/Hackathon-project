@@ -35,6 +35,8 @@ class MainActivity : AppCompatActivity() {
 
                 var intent= Intent(this,Main6Activity::class.java)
                 startActivity(intent)
+                cgpa_new=tt3.text.toString().toDouble()
+
                 M_id=tt2.text.toString().toInt()
 
 
@@ -69,6 +71,7 @@ class MainActivity : AppCompatActivity() {
         return when (item.itemId) {
             R.id.action_settings -> true
             else -> super.onOptionsItemSelected(item)
+
         }
     }
                 //tt4.visibility=View.VISIBLE

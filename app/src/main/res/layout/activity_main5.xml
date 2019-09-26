@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Main5Activity">
+    tools:context=".Main5Activity"
+    android:background="@drawable/back"
+    >
 
     <EditText
         android:layout_width="330dp"
@@ -28,7 +30,7 @@
         android:layout_width="323dp"
         android:layout_height="45dp"
         android:layout_marginBottom="50dp"
-        android:text="Cgpa required-7.0 to 7.5"
+        android:text="Cgpa required     -   5.5 to 6.5"
         android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
@@ -46,16 +48,19 @@
         tools:layout_editor_absoluteX="33dp" />
 
     <Button
+        android:background="@drawable/custom_button"
         android:id="@+id/hh2"
         android:layout_width="79dp"
         android:layout_height="56dp"
         android:layout_marginStart="50dp"
         android:layout_marginBottom="100dp"
+        android:onClick="see"
         android:text="Submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
+        android:background="@drawable/custom_button"
         android:id="@+id/bu2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

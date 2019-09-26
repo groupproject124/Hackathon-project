@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Main3Activity">
+    tools:context=".Main3Activity"
+    android:background="@drawable/back">
 
 
     <EditText
@@ -47,16 +48,19 @@
         tools:layout_editor_absoluteX="33dp" />
 
     <Button
+        android:background="@drawable/custom_button"
         android:id="@+id/hh2"
         android:layout_width="79dp"
         android:layout_height="56dp"
         android:layout_marginStart="50dp"
         android:layout_marginBottom="100dp"
+        android:onClick="see"
         android:text="Submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
+        android:background="@drawable/custom_button"
         android:id="@+id/bu2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -43,7 +43,7 @@ class Main4Activity : AppCompatActivity() {
             hh21.id->{
                 var recipt="naman.nishi@gmail.com"
                 var subject="placement request"
-                var body="roll no"+ M_id+"has applied for Tcs Please see his details with college"
+                var body="roll no"+ M_id+"has applied for Aceenture Please see his details with college"
                 sendEmail(recipt,subject,body)
             }
 

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Main6Activity">
+    tools:context=".Main6Activity"
+    android:background="@drawable/back">
 
 
     <ImageView
@@ -22,9 +23,9 @@
 
     <ImageView
         android:id="@+id/bu27"
-        android:layout_width="129dp"
-        android:layout_height="119dp"
-        android:layout_marginEnd="50dp"
+        android:layout_width="163dp"
+        android:layout_height="146dp"
+        android:layout_marginEnd="36dp"
         android:layout_marginBottom="350dp"
         android:onClick="cal"
         android:outlineProvider="paddedBounds"
@@ -36,8 +37,8 @@
 
     <ImageView
         android:id="@+id/bu23"
-        android:layout_width="160dp"
-        android:layout_height="137dp"
+        android:layout_width="163dp"
+        android:layout_height="146dp"
         android:layout_marginEnd="36dp"
         android:layout_marginBottom="96dp"
         android:onClick="cal"
@@ -50,9 +51,9 @@
 
     <ImageView
         android:id="@+id/bu21"
-        android:layout_width="142dp"
-        android:layout_height="113dp"
-        android:layout_marginStart="50dp"
+        android:layout_width="163dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="10dp"
         android:layout_marginBottom="350dp"
         android:onClick="cal"
         android:visibility="visible"
@@ -62,12 +63,13 @@
         tools:ignore="MissingConstraints" />
 
     <Button
+
         android:id="@+id/bu4"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="70dp"
-        android:background="#FFFFFF"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="68dp"
+        android:background="@drawable/custom_button"
         android:onClick="cal"
         android:text="Click Here"
         app:layout_constraintEnd_toEndOf="parent"
@@ -77,28 +79,30 @@
         android:id="@+id/bu1"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginStart="70dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="250dp"
-        android:background="#FFFFFF"
+        android:background="@drawable/custom_button"
         android:onClick="cal"
         android:text="Click Here"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bu21" />
+        app:layout_constraintTop_toBottomOf="@+id/bu21"
+        app:layout_constraintVertical_bias="0.516" />
 
     <Button
         android:id="@+id/bu2"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="32dp"
         android:layout_marginBottom="25dp"
-        android:background="#FFFFFF"
+        android:background="@drawable/custom_button"
         android:onClick="cal"
         android:text="Click Here"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bu43" />
+        app:layout_constraintTop_toBottomOf="@+id/bu43"
+        app:layout_constraintVertical_bias="0.8" />
 
     <Button
         android:id="@+id/bu3"
@@ -107,7 +111,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="80dp"
         android:layout_marginBottom="28dp"
-        android:background="#FFFFFF"
+        android:background="@drawable/custom_button"
         android:onClick="cal"
         android:text="Click Here"
         app:layout_constraintBottom_toBottomOf="parent"
